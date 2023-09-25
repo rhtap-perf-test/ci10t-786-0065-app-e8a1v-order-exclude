@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-myfm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0065-tenant/ci10t-786-0065-app/devfile-sample-myfm@sha256:347df5eb139b0cf7ae2230557078e91719699dc2c9d9ce22e310e65ddd4be6d4
+        name: my-nodejs
+        resources: {}
+status: {}

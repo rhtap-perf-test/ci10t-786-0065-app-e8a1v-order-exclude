@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-myfm
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-myfm
+    app.kubernetes.io/part-of: ci10t-786-0065-app
+  name: devfile-sample-myfmblvr
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-myfm
+    weight: null
+status: {}
